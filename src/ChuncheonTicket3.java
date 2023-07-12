@@ -1,5 +1,7 @@
 public class ChuncheonTicket3 {
     public static void main(String[] args) {
+
+
         String aliceNationality = "미국";
         int aliceAge = 70;
 
@@ -9,9 +11,9 @@ public class ChuncheonTicket3 {
         String yooNationality = "한국";
         int yooAge = 42;
 
-        boolean aliceDiscount = 할인여부(aliceNationality, aliceAge);
-        boolean kimDiscount = 할인여부(kimNationality, kimAge);
-        boolean yooDiscount = 할인여부(yooNationality, yooAge);
+        boolean aliceDiscount = 할인여부(aliceNationality, aliceAge );
+        boolean kimDiscount = 할인여부(kimNationality, kimAge );
+        boolean yooDiscount = 할인여부(yooNationality, yooAge );
 
         System.out.println("Alice의 반값 적용 여부: " + aliceDiscount);
         System.out.println("Kim의 반값 적용 여부: " + kimDiscount);
@@ -19,6 +21,7 @@ public class ChuncheonTicket3 {
     }
 
     private static boolean 할인여부(String nationality, int age) {
-        return (nationality.equals("한국") && age >= 65);
+        final int SENIOR_AGE_STANDARD = 65;
+        return (nationality.equals("한국") && age >= SENIOR_AGE_STANDARD);
     }
 }
