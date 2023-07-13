@@ -4,6 +4,7 @@ public class 다이아찍기 {
 
     }
 
+
     private static void printDiamond(int size){
         int maxLength = size*2 -1;
         int 중간지점 = maxLength/2;
