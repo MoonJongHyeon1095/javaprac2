@@ -1,4 +1,4 @@
-package chater_28;
+package chapter_28;
 
 public class Jedi {
     private String name;

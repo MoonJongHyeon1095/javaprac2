@@ -1,4 +1,4 @@
-package chater_28;
+package chapter_28;
 
 public class this를통한연쇄overloading {
     public static void main(String[] args) {
